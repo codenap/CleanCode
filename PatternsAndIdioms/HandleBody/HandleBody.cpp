@@ -7,7 +7,7 @@
 
 // (1) Although access specifiers certainly helps towards the principle of encapsulation, the implementation and the representation
 //     of the object is still hard-coupled to each other. This means that a change on the implementation of the object, will require 
-//     a recompilation of the implementation code (since they're on the same spot).
+//     a recompilation of the representation code (since they're on the same spot).
 
 // (2) We take a hit on the object extensibility if we keep the implementation of the code in the same place as its representation as
 //     since each representation methods, are hard-coupled with the well-hidden, but highly specific implementation code.
