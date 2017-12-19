@@ -7,16 +7,21 @@
 
 // (1) Although access specifiers certainly helps towards the principle of encapsulation, the implementation and the representation
 //     of the object is still hard-coupled to each other. This means that a change on the implementation of the object, will require 
-//     a recompilation of the representation code (since they're on the same spot).
+//     a recompilation of the representation code (since they're written in the same spot).
 
-// (2) We take a hit on the object extensibility if we keep the implementation of the code in the same place as its representation as
-//     since each representation methods, are hard-coupled with the well-hidden, but highly specific implementation code.
+// (2) We take a hit on the object extensibility if we keep the implementation of the code in the same place as its representation
+//     since each representation methods are hard-coupled with the well-hidden but highly specialized implementation code.
+//     What this entails for us is a change in implementation structure certainly will change the representation code internals.
 
 // Solution:
 
 // (*) Create two objects, one for implementation and one for representation. 
+
 // (*) The representation will be full transparent with each method being accessible to public. 
-// (*) As for the implementation, all methods will be private. This requires the implementation object to declare the representation object as a friend. 
+
+// (*) As for the implementation, all methods will be private. 
+//     This requires the implementation object to declare the representation object as a friend. 
+
 // (*) Any attempt to access the representation methods just delegates to the implementations methods.
 
 // Structure:
