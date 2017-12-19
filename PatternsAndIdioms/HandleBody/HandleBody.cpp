@@ -15,14 +15,14 @@
 
 // Solution:
 
-// (*) Create two objects, one for implementation and one for representation. 
+// (*) Create two objects: one for implementation and one for representation. 
 
-// (*) The representation will be full transparent with each method being accessible to public. 
+// (*) The representation will be fully transparent with each necessary method being accessible to the public. 
 
 // (*) As for the implementation, all methods will be private. 
-//     This requires the implementation object to declare the representation object as a friend. 
+//     This requires the implementation object to declare the representation object as a 'friend.' 
 
-// (*) Any attempt to access the representation methods just delegates to the implementations methods.
+// (*) Any attempt to access a representation method is internally just a delegation to the implementation methods.
 
 // Structure:
 
