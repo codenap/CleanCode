@@ -21,6 +21,7 @@
 
 // Structure:
 
+
 class Implementation {
   
   friend class Representation;
@@ -39,6 +40,7 @@ private:
   }
 
 };
+
 
 class Representation {
   
@@ -66,6 +68,7 @@ private:
   Implementation* implementation_;
 
 };
+
 
 int main (int arg_count, char* arg_vector []) {
   
