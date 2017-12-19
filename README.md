@@ -1,7 +1,7 @@
 # CleanCode
 
-This is a collection of code for the website that I'm building.
+This is a collection of code and design tutorials for the website that I'm building.
 
-If you pay a close attention, you would see that the repo is empty. 
+This folder will foster all the basic code stuff ranging from design methodologies to algorithm analysis.
 
-For now it is, but I will update it as soon as new content is available.
+Please stay tuned for more!
