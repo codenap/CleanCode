@@ -54,24 +54,24 @@ public:
   
   Representation (void) 
       
-      : implementation_(new Implementation ()) {
+      : implementation (new Implementation ()) {
   }
 
   ~Representation (void) noexcept {
     
-    delete this->implementation_;
+    delete this->implementation;
     
-    this->implementation_ = nullptr;
+    this->implementation = nullptr;
   }
 
   void ExecuteBehaviour (void) const {
   
-    this->implementation_->Behaviour ();  
+    this->implementation->Behaviour ();  
   }
 
 private:
 
-  Implementation* implementation_;
+  Implementation* implementation;
 
 };
 
