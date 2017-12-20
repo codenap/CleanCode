@@ -27,11 +27,9 @@
 
 // Structure:
 
-
 class Implementation {
 
   friend class Representation;
-
 
 private:
   
@@ -50,7 +48,6 @@ private:
 
   int64_t reference_count;
 };
-
 
 class Representation {
 
@@ -90,7 +87,6 @@ public:
     std::cout << "\tRepresentation address: " << this << " || Implementation address: " << this->implementation << '\n';
   }
 
-
 private:
 
   void DecrementReferenceCount (void) {
@@ -115,27 +111,13 @@ private:
   Implementation* implementation;
 };
 
-
 int main (int arg_count, char* arg_vector []) {
   
-  // Demo of the Counted Body Idiom.
+  // Demo of the Counted Body.
 
-  // Empty constructor:
   Representation first_representation_object;
 
   first_representation_object.ExecuteBehaviour ();
-
-  // Using copy constructor:
-  Representation second_representation_object (first_representation_object);
-
-  second_representation_object.ExecuteBehaviour ();
-
-  // Using assignment operator:
-  Representation third_representation_object;
-
-  third_representation_object = second_representation_object;
-
-  third_representation_object.ExecuteBehaviour ();
   
   return 0;
 }
