@@ -11,7 +11,8 @@
 
 // (2) We take a hit on the object extensibility if we keep the implementation of the code in the same place as its representation
 //     since each representation methods are hard-coupled with the well-hidden but highly specialized implementation code.
-//     What this entails for us is a change in implementation structure certainly will change the representation code internals.
+//     What this entails for us is that it will be unnecessarily difficult for us to change around our object implementation if
+//     something better comes up in the near future.
 
 // Solution:
 
