@@ -6,9 +6,9 @@
 // Motivation:
 
 // (1) Naive object assignment is quite expensive. Reasoning to this statement is that the compiler's default assignment constructor performs a 
-//     recursive member-wise copy (shallow copy). This works fairly well if you members are small non-reference types such as char or double, etc.
-//     However, imagine if your members are larger complex types like a matrix concrete data type decorated with all the fancy abstract data types.
-//     The STL provides. This can even be worse if the member is a reference type which can cause unwanted memory access if you're not careful.
+//     recursive member-wise copy (shallow copy). This works fairly well if your members are small, non-reference types such as char, double, etc.
+//     However, imagine if your members are larger, more complex types like a matrix concrete data type decorated with all the fancy data structures
+//     the STL provides. This can even be worse if the member is a reference type which can cause unwanted memory access if you're not careful.
 
 // (2) The above can be avoided if we indeed use pointers. Say pointer1 points to the same object as pointer 2. Fairly efficient as both doesn't
 //     hold the same yet distinct copies their underlying object. However, this can be messy to manage for the client; this is not easy to use.
