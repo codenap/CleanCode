@@ -23,7 +23,7 @@
 // (*) As for the implementation, all methods will be private. 
 //     This requires the implementation object to declare the representation object as a 'friend.' 
 
-// (*) Any attempt to access a representation method is internally just a delegation to an implementation methods.
+// (*) Any attempt to access a representation method is internally just a delegation to an implementation method.
 
 // Structure:
 
