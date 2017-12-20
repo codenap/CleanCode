@@ -103,7 +103,7 @@ private:
 
   void DecrementReferenceCount  (void) {
     
-    --*(this->reference_count);
+    --(*this->reference_count);
 
     if (*this->reference_count > 0) {
       return;
@@ -120,7 +120,7 @@ private:
 
   void IncrementReferenceCount (void) {
     
-    ++*(this->reference_count);
+    ++(*this->reference_count);
   }
 };
 
