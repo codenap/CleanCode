@@ -32,7 +32,6 @@ class Implementation {
 
   friend class Representation;
 
-
 private:
   
   Implementation (void)
@@ -114,6 +113,7 @@ private:
 
   Implementation* implementation;
 };
+
 
 
 int main (int arg_count, char* arg_vector []) {
