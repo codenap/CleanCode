@@ -35,9 +35,9 @@ class Base {
 
 public:
   
-  explicit Base (const std::string& object_number) 
+  explicit Base (const std::string& identifier) 
       
-      : object_number (object_number) {
+      : identifier (identifier) {
   }
 
   virtual ~Base (void) noexcept {
@@ -50,12 +50,12 @@ public:
 
   virtual void ExecuteBehaviour (void) const {
     
-    std::cout << this->object_number << " Base class behaviour is executed.\n";
+    std::cout << this->identifier << " Base class behaviour is executed.\n";
   }
 
 protected:
 
-  std::string object_number;
+  std::string identifier;
 };
 
 
@@ -64,9 +64,9 @@ class Derived : public Base {
 
 public:
   
-  explicit Derived (const std::string& object_number)
+  explicit Derived (const std::string& identifier)
       
-      : Base (object_number) {
+      : Base (identifier) {
   }
 
   virtual ~Derived (void) noexcept override {
@@ -78,7 +78,7 @@ public:
 
   virtual void ExecuteBehaviour (void) const override {
   
-    std::cout << this->object_number << " Derived Class behaviour is executed.\n";
+    std::cout << this->identifier << " Derived Class behaviour is executed.\n";
   }
 };
 
