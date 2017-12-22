@@ -18,16 +18,16 @@
 // (Better) Solution:
 
 // (*) Define a virtual method called "Clone" ("Copy", "ProduceSimilarPopulationsOfGeneticallyIdenticalIndividualObjects", or anything really)
-//     Such that it has the following signature: Base_Class* Derived_class::Clone (void) const.
+//     such that the method has the following signature: Base_Class* Derived_class::Clone (void) const.
 
 //     NOTE: Notice the const keyword? Although not necessary, it is a good practice to not modify any members of the invoking object as that
-//     is not well specified through the name of the method. IF you do want that please following a naming procedure like: "CloneAnd..." 
-//     (not recommended).
+//     is not well-defined through the name of the method. IF you really want such, please following a naming convention that reveals your
+//     true intentions, kind like: "CloneAndModifySomeShit" (not recommended).
 
-// (*) The point of the Clone object is to return a copy of its SPECIFIED SELF through the use of shallow copy: return new derived_class (*this)
+// (*) The point of the Clone object is to return a copy of ITSELF through the use of shallow copy: return new derived_class (*this)
 
-// (*) Make the all the derived class override the Clone method such that an invocation of such method, even through the base class pointer,
-//     returns the specific copy of the object stored in the pointer.
+// (*) Make the all the derived classes override the Clone method such that an invocation of such method, even through the base class pointer,
+//     returns the specific copy of the object stored in the base class pointer.
 
 // Structure:
 
