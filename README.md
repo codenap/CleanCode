@@ -1,7 +1,24 @@
 # CleanCode
 
-This is a collection of code and design tutorials for the website that I'm building.
+This is a collection of code that demonstrates ways to keep your code clean. No promises that the code itself will be clean however.
 
-This folder will foster all the basic code stuff ranging from design methodologies to algorithm analysis.
+If you feel like I missed something, feel free to hit your boy up with some coding knowledge at:
 
-Please stay tuned for more!
+codeisclean@gmail.com 
+
+I am always hungry to learn from my peers so if you're someone like me that hates sunlight and loves to play around with numbers
+
+holla at me through the following email:
+
+nondeterministiceturingmachine@gmail.com
+
+
+Here's the list of patterns and idioms that can be found here:
+
+* __ Clone __
+
+* __Counted Body__
+
+* __Detached Counted Body__
+
+* __Handle/Body__
