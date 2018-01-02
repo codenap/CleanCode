@@ -8,7 +8,7 @@ codeisclean@gmail.com
 
 I am always hungry to learn from my peers so if you're someone like me that hates sunlight and loves to play around with numbers, holler at me through the following email:
 
-nondeterministiceturingmachine@gmail.com
+nondeterministicturingmachine@gmail.com
 
 
 Here's the list of patterns and idioms that can be found here:
