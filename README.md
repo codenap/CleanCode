@@ -25,6 +25,6 @@ Here's the list of patterns and idioms that can be found here:
 
 I constantly update this repo with new tutorials so stay tuned for more!
 
-If you found this tutorial useful, feel free to tell your friend about it! 
+If you found this tutorial useful, feel free to tell your friends about it! 
 
 Many thanks!
