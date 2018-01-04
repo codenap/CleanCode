@@ -13,6 +13,8 @@ nondeterministicturingmachine@gmail.com
 
 Here's the list of patterns and idioms that can be found here:
 
+* __Bridge__
+
 * __Clone__
 
 * __Counted Body__
